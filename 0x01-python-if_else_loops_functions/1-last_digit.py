@@ -9,10 +9,9 @@ def last1(number):
 
 
 last = last1(number)
-text = "Last digit of "
 
 if last > 5:
-    print(f"LAst digit of {number} is {last}  and is greater than 5")
+    print(f"Last digit of {number} is {last}  and is greater than 5")
 elif last == 0:
     print(f"Last digit of {number} is {last} and is 0")
 else:
