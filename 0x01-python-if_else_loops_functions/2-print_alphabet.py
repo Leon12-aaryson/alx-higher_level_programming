@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-import string
 
-print(string.ascii_lowercase,end="")
+for i in range(97, 123):
+    alpha = chr(i)
+    print(alpha,end="")
