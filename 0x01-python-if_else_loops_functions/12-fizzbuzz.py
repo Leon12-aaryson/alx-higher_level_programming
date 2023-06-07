@@ -6,5 +6,7 @@ def fizzbuzz():
             print("Fizz", end=" ")
         elif (i % 5) == 0:
             print("Buzz", end=" ")
-        else (i % 15) == 0:
+        elif (i % 15) == 0:
             print("FizzBuzz", end=" ")
+        else:
+            print(i, end=" ")
