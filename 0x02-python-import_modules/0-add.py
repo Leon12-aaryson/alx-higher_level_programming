@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from add_0 import add as sum
+from add_0 import add
 
 a = 1
 b = 2
-result = sum(a, b)
+result = add(a, b)
 
 print(f"{a} + {b} = " + "{}".format(result), end = "\n")
