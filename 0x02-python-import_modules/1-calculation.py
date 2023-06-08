@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     result1 = sub(a, b)
     print(f"{a} - {b} = " + "{}".format(result1))
-    
+
     result2 = mul(a, b)
     print(f"{a} * {b} = " + "{}".format(result2))
 
