@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-def no_p(my_string):
-    cpy = [x for x in my_string if x != 'c' and x != 'C']
-    return ("".join(cpy))
+
+def no_c(my_string):
+    cpy = my_string.translate({ord('c'): None})
+        cpy = cpys.translate({ord('C'): None})
+            return cpy
