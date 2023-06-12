@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def no_p(my_string):
-    cpy = [x for x in my_string if x != 'c' and x != 'C']
+
+def no_c(my_string):
+    cpy = [i for i in my_string if i != 'C' or i != 'c']
     return ("".join(cpy))
