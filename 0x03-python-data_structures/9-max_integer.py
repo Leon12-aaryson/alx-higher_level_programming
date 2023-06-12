@@ -9,7 +9,7 @@ def max_integer(my_list=[]):
         return (None)
 
     for x in range(list1):
-        if my_list[x] > big_char:
+        if my_list[x] > bchar:
             bchar = my_list[x]
 
     return (bchar)
