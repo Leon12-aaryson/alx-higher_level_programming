@@ -2,6 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
+
 def last1(number):
     last_no = abs(number) % 10
     return -last_no if (number < 0) else last_no
