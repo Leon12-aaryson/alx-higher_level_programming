@@ -11,7 +11,3 @@ if __name__ == "__main__":
             return c
         else:
             return sub(a, b)
-
-
-import dis
-dis.dis(magic_calculation_102)
