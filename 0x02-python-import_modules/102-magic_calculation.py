@@ -8,9 +8,9 @@ if __name__ == "__main__":
 
             for i in range(4, 6):
                 c = add(c, i)
+            return c
         else:
             return sub(a, b)
-        return c
 
 
 import dis
