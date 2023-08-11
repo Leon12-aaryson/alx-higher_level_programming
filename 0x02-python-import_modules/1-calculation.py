@@ -13,8 +13,6 @@ if __name__ == "__main__":
 
     mul = mul(a, b)
     print(f"{a} * {b} = {mul}")
-    
-    #.format(a, b, mul))
 
     div = div(a, b)
     print("{} / {} = {}".format(a, b, div))
