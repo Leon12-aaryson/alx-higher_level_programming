@@ -5,4 +5,3 @@ def divisible_by_2(my_list=[]):
             print("{:d} is not divisible by 2".format(my_list[i]))
         else:
             print("{:d} is divisible by 2".format(my_list[i]))
-        
