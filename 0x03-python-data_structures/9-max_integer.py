@@ -11,6 +11,5 @@ def max_integer(my_list=[]):
     for i in range(list_len):
         if my_list[i] > next_num:
             next_num = my_list[i]
-    
 
     return next_num
