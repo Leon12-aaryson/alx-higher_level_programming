@@ -1,8 +1,15 @@
-#!/bin/python3
-from main_102 import magic_calculation
+#!/usr/bin/python3
 
-if __name__ == "__main__":
-    pass
+def magic_calculation(a, b):
+    result = 0
 
-import dis
-dis.dis(magic_calculation);
+    for index in range(1, 3):
+        try:
+            if index > a:
+                raise Exception('Too far')
+            else:
+                result += a ** b / index
+        except:
+            result = b + a
+            break
+    return (result)
