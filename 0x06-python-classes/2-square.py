@@ -3,8 +3,8 @@
 class Square:
     '''Creation of the class Square'''
 
-
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
+        '''instatmtiating the class'''
         self.__size = size
 
         if isinstance(size, int):
