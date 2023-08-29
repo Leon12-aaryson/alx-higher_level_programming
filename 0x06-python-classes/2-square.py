@@ -6,7 +6,8 @@ class Square:
     def __init__(self, size=0):
         '''instantiating the class
         Args:
-            size`'''
+            size: paprameter 1
+        '''
 
         if ((type(size) == str) or (type(size) == float)):
             raise TypeError("size must be an integer")
