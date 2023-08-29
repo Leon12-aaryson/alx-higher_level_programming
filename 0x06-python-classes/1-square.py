@@ -14,4 +14,4 @@ class Square:
         Args:
             param1: fisrt object
         '''
-        self._size = size
+        self.__size = size
