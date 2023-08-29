@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-'''
-new class
-'''
+''' new class '''
 
 
 class Square:
@@ -11,4 +9,9 @@ class Square:
     '''
 
     def __init__(self, size):
+        ''' Instantiating the class function
+
+        Args:
+            param1: fisrt object
+        '''
         self._size = size
