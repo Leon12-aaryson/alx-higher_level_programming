@@ -6,5 +6,4 @@ creating a class Square
 
 
 class Square:
-    def Square():
-        pass
+     pass
