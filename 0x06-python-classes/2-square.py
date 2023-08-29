@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 
+'''Defining a Square class'''
+
+
 class Square:
-    '''Creation of the class Square'''
+    '''A class defining a square(Geometric shape)'''
 
     def __init__(self, size=0):
-        '''instantiating the class
+        '''Instantiating an object of the square class
         Args:
-            size: paprameter 1
+            size: first parameter
         '''
-
         if ((type(size) == str) or (type(size) == float)):
             raise TypeError("size must be an integer")
         elif (size < 0):
