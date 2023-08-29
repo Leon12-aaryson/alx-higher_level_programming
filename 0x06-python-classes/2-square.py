@@ -4,16 +4,12 @@ class Square:
     '''Creation of the class Square'''
 
     def __init__(self, size=0):
-        '''instatmtiating the class'''
+        '''instantiating the class
+        Args:
+            size`'''
         self.__size = size
 
-        if isinstance(size, int):
-            try:
-                return None
-            except TypeError:
-                print("size must be an integer")
-        elif size < 0:
-            try:
-                return size
-            except ValueError:
-                print("size must be >= 0")
+        if (type(size)==str) or type(size) == float):
+            raise TypeError("size must be an integer")
+        elif (size < 0):
+            raise ValueError("size must be >= 0")
