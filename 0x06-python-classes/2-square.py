@@ -8,10 +8,9 @@ class Square:
         Args:
             size`'''
 
-        if (type(size)==str) or type(size) == float):
+        if ((type(size) == str) or (type(size) == float)):
             raise TypeError("size must be an integer")
         elif (size < 0):
             raise ValueError("size must be >= 0")
-
         else:
             self.__size = size
