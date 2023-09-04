@@ -54,10 +54,10 @@ class Rectangle:
         """create the perimeter object"""
         if self.__height == 0 or self.__width == 0:
             return (0)
-        return ((self.__height * 2) + (self.__width * 2)
+        return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self) -> str:
-        """presents a diagram of the rectangle defined for an object"""
+        """diagram printed by following the oject height and width"""
         if self.__width == 0 or self.__height == 0:
             return ("")
         rectangle = ""
