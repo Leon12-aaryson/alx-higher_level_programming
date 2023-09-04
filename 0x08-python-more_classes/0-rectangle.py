@@ -4,6 +4,7 @@
 class Rectangle
 """
 
+
 class Rectangle:
     '''
     Creating a class
