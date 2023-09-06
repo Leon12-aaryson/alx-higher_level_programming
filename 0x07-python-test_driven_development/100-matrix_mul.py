@@ -33,13 +33,6 @@ def matrix_mul(m_a, m_b):
             m_b for nums1 in row):
         raise TypeError("m_b should contain only integers or floats")
 
-    for row in m_a:
-        if not all(isinstance(item, (int, float)) for item in row):
-            raise TypeError("m_a should contain only integers or floats")
-    for row in m_b:
-        if not all(isinstance(item, (int, float)) for item in row):
-            raise TypeError("m_b should contain only integers or floats")
-
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
