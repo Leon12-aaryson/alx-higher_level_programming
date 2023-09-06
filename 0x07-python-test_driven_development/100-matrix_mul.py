@@ -40,6 +40,3 @@ def matrix_mul(m_a, m_b):
             for k in range(len(m_b)):
                 result[i][j] += m_a[i][k] * m_b[k][j]
     return (result)
-
-if __name__ = "__main__":
-    unittest.main()
