@@ -1,4 +1,4 @@
-# run test with python3 -m doctest -v ./tests/100-matrix_mul.txt
+# run test with python3 -m docest -v ./tests/100-matrix_mul.txt
 
 First import method to test
 >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
@@ -46,14 +46,14 @@ Test different sized lists in matrix:
      >>> print(matrix_mul(m_a, m_b))
      Traceback (most recent call last):
      ...
-     TypeError: each row of m_b must should be of the same size
+     TypeError: each row of m_b must be of the same size
 
      >>> m_a = [[1, 2], [1, 2, 3, 4]]
      >>> m_b = [[1, 2], [1, 2]]
      >>> print(matrix_mul(m_a, m_b))
      Traceback (most recent call last):
      ...
-     TypeError: each row of m_a must should be of the same size
+     TypeError: each row of m_a must be of the same size
 
 Test matrix with other data types:
      >>> m_a = [["hey"], ["damn"]]
