@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ creating the matrix multiplication"""
 
+
 def matrix_mul(m_a, m_b):
     """creation of the function to multiply matrices
     Args:
@@ -22,9 +23,9 @@ def matrix_mul(m_a, m_b):
             raise TypeError("m_a must be a list of lists")
     if all(not isinstance(list2, list) for list2 in m_b):
         raise TypeError("m_b must be a list of lists")
-    if m_a == [] and m_a == [[]]:
+    if m_a == [] or m_a == [[]]:
         raise ValueError("m_a can't be empty")
-    if m_b == [] and m_b == [[]]:
+    if m_b == [] or m_b == [[]]:
         raise ValueError("m_b can't be empty")
     if all(not isinstance(nums, (int, float)) for row in m_a for nums in row):
         raise TypeError("m_a should contain only integers or floats")
