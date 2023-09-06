@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ creating the matrix multiplication"""
 
-
 def matrix_mul(m_a, m_b):
     """creation of the function to multiply matrices
     Args:
@@ -33,7 +32,7 @@ def matrix_mul(m_a, m_b):
             m_b for nums1 in row):
         raise TypeError("m_b should contain only integers or floats")
     if len(m_a[0]) != len(m_b):
-        raise ValueError("should be same")
+        raise ValueError("m_a and m_b can't be multiplied")
 
     result = [[0 for _ in range(len(m_b[0]))] for _ in range(len(m_a))]
     for i in range(len(m_a)):
@@ -41,3 +40,6 @@ def matrix_mul(m_a, m_b):
             for k in range(len(m_b)):
                 result[i][j] += m_a[i][k] * m_b[k][j]
     return (result)
+
+if __name__ = "__main__":
+    unittest.main()
