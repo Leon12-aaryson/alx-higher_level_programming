@@ -27,9 +27,9 @@ def matrix_mul(m_a, m_b):
         raise ValueError("m_a can't be empty")
     if m_b == [] or m_b == [[]]:
         raise ValueError("m_b can't be empty")
-    if all(not isinstance(nums, (int, float)) for row in m_a for nums in row):
+    if not all(isinstance(nums, (int, float)) for row in m_a for nums in row):
         raise TypeError("m_a should contain only integers or floats")
-    if all(not isinstance(nums1, (int, float)) for row in
+    if not all(isinstance(nums1, (int, float)) for row in
             m_b for nums1 in row):
         raise TypeError("m_b should contain only integers or floats")
 
