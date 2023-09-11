@@ -13,7 +13,7 @@ class Square(Rectangle):
     """
     def __init__(self, size):
         """
-        class innitialization also as 
+        class innitialization also as
         constructor
         Args:
             size: is size of square
