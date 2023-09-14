@@ -12,7 +12,5 @@ def read_file(filename=""):
     """
     with open(filename, "r", encoding="UTF-8") as read_file:
         file_details = read_file.read()
-        print(file_details)
-if __name__ == "__main__":
-    file_path = "filename"
-    read_file(file__path)
+        for line in file_details:
+            print(line, end='')
