@@ -11,5 +11,5 @@ def read_file(filename=""):
         filename: this stands for path or name of file
     """
     with open(filename, "r", encoding="UTF-8") as read_file:
-        file_details =  read_file.read()
+        file_details = read_file.read()
         print(file_details)
