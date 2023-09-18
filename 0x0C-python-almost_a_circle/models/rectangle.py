@@ -111,8 +111,10 @@ class Rectangle(Base):
         creation of the display method that
         outputs # while looping height and width
         """
-        for _ in range(self.__height):
-            print("#" * self.__width)
+        for _ in range(self.y):
+            print()
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
 
     def __str__(self):
         """
