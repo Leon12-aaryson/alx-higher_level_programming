@@ -70,8 +70,8 @@ class Square(Rectangle):
         of the squar
         """
         return {
-                'id' : self.id,
-                'size' : self.size,
-                'x' : self.x,
-                'y' : self.y,
+                'id': self.id,
+                'size': self.size,
+                'x': self.x,
+                'y': self.y,
                 }
