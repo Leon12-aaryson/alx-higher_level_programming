@@ -111,16 +111,16 @@ class Rectangle(Base):
         creation of the display method that
         outputs # while looping height and width
         """
-        for _ in range(self.y):
+        for _ in range(self.__y):
             print()
-        for _ in range(self.height):
-            print(" " * self.x + "#" * self.width)
+        for _ in range(self.__height):
+            print(" " * self.__x + "#" * self.__width)
 
     def __str__(self):
         """
         overiding the rectangle method using __str__
         """
-        return f"[Rectangle]({self.id}) {self.x}/{self.y} - {self.width}/\
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/\
 {self.height}"
 
     def update(self, *args, **kwargs):
@@ -133,34 +133,34 @@ class Rectangle(Base):
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
-                self.width = args[1]
+                self.__width = args[1]
             if len(args) >= 3:
-                self.height = args[2]
+                self.__height = args[2]
             if len(args) >= 4:
-                self.x = args[3]
+                self.__x = args[3]
             if len(args) >= 5:
-                self.y = args[4]
+                self.__y = args[4]
         else:
             if 'id' in kwargs:
                 self.id = kwargs['id']
             if 'width' in kwargs:
-                self.width = kwargs['width']
+                self.__width = kwargs['width']
             if 'height' in kwargs:
-                self.height = kwargs['height']
+                self.__height = kwargs['height']
             if 'x' in kwargs:
-                self.x = kwargs['x']
+                self.__x = kwargs['x']
             if 'y' in kwargs:
-                self.y = kwargs['y']
+                self.__y = kwargs['y']
 
-        def to_dictionary(self):
-            """
-            this class returns dictionary representation
-            of rectangle
-            """
-            return {
-                    'id': self.id,
-                    'width': self.width,
-                    'height': self.height,
-                    'x': self.x,
-                    'y': self.y
-                    }
+    def to_dictionary(self):
+        """
+        this class returns dictionary representation
+        of rectangle
+        """
+        return {
+                'id': self.id,
+                'width': self.__width,
+                'height': self.__height,
+                'x': self.__x,
+                'y': self.__y
+                }
