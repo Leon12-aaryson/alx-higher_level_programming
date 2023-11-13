@@ -7,4 +7,4 @@ function factorial (n) {
 }
 const [arg1] = process.argv.slice(2);
 const num = parseInt(arg1);
-console.log(`The factorial of ${num} is: ${factorial(num)}`);
+console.log(`${factorial(num)}`);
