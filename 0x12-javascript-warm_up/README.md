@@ -1,2 +1,1 @@
-:set number
-
+# Javascript starter for alx
