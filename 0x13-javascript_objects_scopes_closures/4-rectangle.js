@@ -1,5 +1,5 @@
 class Rectangle {
-  constructor(w, h) {
+  constructor (w, h) {
     if (w <= 0 || h <= 0 || typeof w !== 'number' || typeof h !== 'number') {
       return {};
     }
@@ -8,9 +8,9 @@ class Rectangle {
     this.height = h;
   }
 
-  print() {
+  print () {
     if (!this.width || !this.height) {
-      console.log("");
+      console.log('');
       return;
     }
 
@@ -19,11 +19,11 @@ class Rectangle {
     }
   }
 
-  rotate() {
+  rotate () {
     [this.width, this.height] = [this.height, this.width];
   }
 
-  double() {
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
