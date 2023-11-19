@@ -7,14 +7,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """_summary_
-
-    Args:
-        username (_type_): _description_
-        password (_type_): _description_
-        database (_type_): _description_
-        state_name (_type_): _description_
-    """
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -22,7 +14,7 @@ if __name__ == "__main__":
         passwd=argv[2],
         db=argv[3]
     )
-    
+
     state_name = argv[4]
 
     cursor = db.cursor()
