@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 import MySQLdb
-import sys
+from sys import argv
 
 
 def search_states_by_name_safe(username, password, database, state_name):
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=username,
-        passwd=password,
-        db=hbtn_0e_0_usa
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3]
     )
 
     cursor = db.cursor()

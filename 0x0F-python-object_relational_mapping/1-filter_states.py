@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import MySQLdb
-import sys
+from sys import argv
 
 
 def list_states_starting_with_N(username, password, database):
@@ -8,9 +8,9 @@ def list_states_starting_with_N(username, password, database):
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
-        user=username,
-        passwd=password,
-        db=hbtn_0e_0_usa
+        user=argv[1],
+        passwd=argv[2],
+        db=argv[3]
     )
     cursor = db.cursor()
 
