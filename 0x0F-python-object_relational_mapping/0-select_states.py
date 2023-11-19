@@ -4,7 +4,7 @@
 creation of new module
 """
 import MySQLdb
-import sys
+# import sys
 from sys import argv
 
 
