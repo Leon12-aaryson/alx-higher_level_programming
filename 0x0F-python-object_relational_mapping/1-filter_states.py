@@ -7,7 +7,7 @@ import MySQLdb
 from sys import argv
 
 
-def list_states_starting_with_N(username, password, database):
+if __name__ == "__main__":
     """_summary_
 
     Args:
@@ -33,13 +33,3 @@ def list_states_starting_with_N(username, password, database):
 
     cursor.close()
     db.close()
-
-
-if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: python script.py <username> <password> <database>")
-        sys.exit(1)
-
-    username, password, database = sys.argv[1:4]
-
-    list_states_starting_with_N(username, password, database)

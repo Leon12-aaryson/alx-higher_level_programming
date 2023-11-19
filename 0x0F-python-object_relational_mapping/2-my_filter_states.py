@@ -1,8 +1,14 @@
 #!/usr/bin/python3
+
+"""
+creation of new module in ORM
+"""
+
 import MySQLdb
 import sys
 
-def search_states_by_name(username, password, database, state_name):
+
+if __name__ == "__main__":
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -13,7 +19,8 @@ def search_states_by_name(username, password, database, state_name):
 
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
+    query = "SELECT * FROM states WHERE name =
+            '{}' ORDER BY id ASC".format(state_name)
 
     cursor.execute(query)
 
@@ -24,12 +31,3 @@ def search_states_by_name(username, password, database, state_name):
 
     cursor.close()
     db.close()
-
-if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: python script.py <username> <password> <database> <state_name>")
-        sys.exit(1)
-
-    username, password, database, state_name = sys.argv[1:5]
-
-    search_states_by_name(username, password, database, state_name)
