@@ -22,6 +22,8 @@ if __name__ == "__main__":
         passwd=argv[2],
         db=argv[3]
     )
+    
+    state_name = argv[4]
 
     cursor = db.cursor()
 
