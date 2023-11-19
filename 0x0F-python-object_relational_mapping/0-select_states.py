@@ -4,10 +4,11 @@
 creation of new module
 """
 import MySQLdb
+import sys
 from sys import argv
 
 
-def list_states(username, password, database):
+if __name__ == "__main__":
     """
     declaring function
 
@@ -34,13 +35,3 @@ def list_states(username, password, database):
 
     cursor.close()
     db.close()
-
-
-if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: python script.py <username> <password> <database>")
-        sys.exit(1)
-
-    username, password, database = sys.argv[1:4]
-
-    list_states(username, password, database)
