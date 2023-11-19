@@ -1,9 +1,20 @@
 #!/usr/bin/python3
+"""
+module created
+"""
 import MySQLdb
 from sys import argv
 
 
 def search_states_by_name_safe(username, password, database, state_name):
+    """_summary_
+
+    Args:
+        username (_type_): _description_
+        password (_type_): _description_
+        database (_type_): _description_
+        state_name (_type_): _description_
+    """
     db = MySQLdb.connect(
         host="localhost",
         port=3306,

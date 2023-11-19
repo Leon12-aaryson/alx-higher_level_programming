@@ -1,10 +1,20 @@
 #!/usr/bin/python3
+"""
+New module creation
+"""
+
 import MySQLdb
 from sys import argv
 
 
 def list_states_starting_with_N(username, password, database):
-    # Connect to the MySQL server
+    """_summary_
+
+    Args:
+        username (_type_): _description_
+        password (_type_): _description_
+        database (_type_): _description_
+    """
     db = MySQLdb.connect(
         host="localhost",
         port=3306,

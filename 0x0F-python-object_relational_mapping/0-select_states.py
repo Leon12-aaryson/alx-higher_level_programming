@@ -1,9 +1,21 @@
 #!/usr/bin/python3
+
+"""
+creation of new module
+"""
 import MySQLdb
 from sys import argv
 
 
 def list_states(username, password, database):
+    """
+    declaring function
+
+    Args:
+        username (_type_): _description_
+        password (_type_): _description_
+        database (_type_): _description_
+    """
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
