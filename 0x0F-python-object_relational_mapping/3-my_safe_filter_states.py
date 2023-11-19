@@ -2,6 +2,7 @@
 import MySQLdb
 import sys
 
+
 def search_states_by_name_safe(username, password, database, state_name):
     db = MySQLdb.connect(
         host="localhost",
@@ -24,6 +25,7 @@ def search_states_by_name_safe(username, password, database, state_name):
 
     cursor.close()
     db.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 5:
