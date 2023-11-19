@@ -9,7 +9,7 @@ def search_states_by_name_safe(username, password, database, state_name):
         port=3306,
         user=username,
         passwd=password,
-        db=database
+        db=hbtn_0e_0_usa
     )
 
     cursor = db.cursor()

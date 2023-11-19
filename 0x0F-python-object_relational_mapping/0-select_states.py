@@ -9,7 +9,7 @@ def list_states(username, password, database):
         port=3306,
         user=username,
         passwd=password,
-        db=database
+        db=hbtn_0e_0_usa
     )
     cursor = db.cursor()
 
