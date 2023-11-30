@@ -3,8 +3,8 @@
 
 
 def find_peak(list_of_integers):
-    """ 
-    Find the peak integer of an un sorted list 
+    """
+    Find the peak integer of an un sorted list
     """
     local_list = list_of_integers
     local_list.sort()
