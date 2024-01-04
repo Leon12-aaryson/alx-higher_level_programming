@@ -24,7 +24,7 @@ request.get(apiURL, (error, response, body) => {
       return acc;
     }, {});
 
-    console.log(JSON.stringify(userCompletedTasks, null, 2));
+    console.log(JSON.stringify(userCompletedTasks, null, 2).replace(/"/g, "'"));
   } catch (parseError) {
     console.error('Error parsing JSON:', parseError.message);
   }
